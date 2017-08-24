@@ -29,9 +29,9 @@ void loop() {
     for (int i = 0; i < 50; i++) {
       int c = millis();
       Serial.print(sensor.readRangeSingleMillimeters());
-      Serial.print(".");
+      Serial.print(" , ");
       Serial.print(map(i,0,49,0,360));
-      Serial.print(",");
+      Serial.print(" . ");
       int d = millis();
       delay(26-(d-c));
     }
